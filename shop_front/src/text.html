@@ -75,11 +75,9 @@
       };
 
       const newUsers = users.map((user) =>
-        user.id == updateUserDto.id ? { ...user, ...updateUserDto } : user
+        user.id == updateUserDto.id ? { ...user, ...updateUserDto } : user,
       ); // const newUser = {...users};
       console.log('newUsers', newUsers);
-
-      console.log('7. ============================ 수정하기');
     </script>
   </body>
 </html>
